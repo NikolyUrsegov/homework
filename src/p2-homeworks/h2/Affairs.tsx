@@ -2,6 +2,7 @@ import React from 'react'
 import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
 import s from './Affairs.module.css'
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 
 type AffairsPropsType = { // need to fix any
@@ -54,11 +55,17 @@ function Affairs(props: AffairsPropsType) {
     return (
         <div className={s.container}>
             {mappedAffairs}
+            {/*<div className={s.buttonBlock}>*/}
+            {/*    <button className={`${bgAffair("all")} ${s.priorityBtn}`} onClick={setAll}>All</button>*/}
+            {/*    <button className={`${bgAffair("high")} ${s.priorityBtn}`} onClick={setHigh}>High</button>*/}
+            {/*    <button className={`${bgAffair("middle")} ${s.priorityBtn}`} onClick={setMiddle}>Middle</button>*/}
+            {/*    <button className={`${bgAffair("low")} ${s.priorityBtn}`} onClick={setLow}>Low</button>*/}
+            {/*</div>*/}
             <div className={s.buttonBlock}>
-                <button className={`${bgAffair("all")} ${s.priorityBtn}`} onClick={setAll}>All</button>
-                <button className={`${bgAffair("high")} ${s.priorityBtn}`} onClick={setHigh}>High</button>
-                <button className={`${bgAffair("middle")} ${s.priorityBtn}`} onClick={setMiddle}>Middle</button>
-                <button className={`${bgAffair("low")} ${s.priorityBtn}`} onClick={setLow}>Low</button>
+                <SuperButton className={`${bgAffair("all")} ${s.priorityBtn}`} onClick={setAll}>All</SuperButton>
+                <SuperButton className={`${bgAffair("high")} ${s.priorityBtn}`} onClick={setHigh}>High</SuperButton>
+                <SuperButton className={`${bgAffair("middle")} ${s.priorityBtn}`} onClick={setMiddle}>Middle</SuperButton>
+                <SuperButton className={`${bgAffair("low")} ${s.priorityBtn}`} onClick={setLow}>Low</SuperButton>
             </div>
         </div>
     )

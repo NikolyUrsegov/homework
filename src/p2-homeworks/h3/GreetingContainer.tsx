@@ -18,6 +18,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => {
         let eventValue = e.currentTarget.value
+        setError('')
         if (eventValue.match(/^[A-Za-z]+$/)) {
             setName(eventValue)
         } else if (eventValue === '') {

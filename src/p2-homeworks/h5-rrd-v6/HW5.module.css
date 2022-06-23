@@ -1,0 +1,8 @@
+.container {
+    height: 20px;
+    transform: scale(0);
+    transition: 0.5s;
+}
+.active {
+    transform: scale(1);
+}
