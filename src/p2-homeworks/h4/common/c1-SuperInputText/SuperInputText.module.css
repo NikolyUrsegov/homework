@@ -3,11 +3,18 @@
 
 }
 .superInput {
+    min-width: 150px;
+    height: 30px;
+    padding-left: 20px;
+    border-radius: 25px ;
+    background: #adde52;
+    outline: none;
+    margin: 10px 0 10px 10px;
 
 }
 
 .errorInput {
-    border: 3px solid lime;
+    border: 3px solid firebrick;
     background: red;
 }
 

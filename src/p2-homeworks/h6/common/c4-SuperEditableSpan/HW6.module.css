@@ -1,0 +1,14 @@
+.message {
+    margin: 15px;
+    color: #274926;
+}
+.message:hover::after {
+    content: attr(title);
+    margin: 10px;
+    z-index: 1;
+    background: rgba(255,255,230,0.9);
+    font-size: 11px;
+    padding: 5px 10px;
+    border: 1px solid firebrick;
+    border-radius: 20px;
+}

@@ -1,7 +1,16 @@
 .default {
-
+    height: 30px;
+    width: 60px;
+    background: #f1dcd5;
+    cursor: pointer;
+    border-radius: 25px;
+    margin: 10px 10px 10px 0;
 }
 
 .red {
-    background: red;
+    background: red; height: 30px;
+    width: 60px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin: 10px 10px 10px 0;
 }
